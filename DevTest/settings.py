@@ -51,6 +51,24 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'DevTest.urls'
+# settings.py
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'dikshapriya969@gmail.com'  # Your email address
+EMAIL_HOST_PASSWORD = 'huon tmum phec banc'  # Your email password (or app-specific password)
+
+import os
+import ssl
+import certifi
+
+# Configure SSL to use certifi's certificates
+ssl._create_default_https_context = ssl._create_unverified_context
+os.environ['SSL_CERT_FILE'] = certifi.where()
+
 
 TEMPLATES = [
     {

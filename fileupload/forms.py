@@ -10,9 +10,8 @@ class UploadFileForm(forms.Form):
         if not file.name.endswith(('.csv', '.xls', '.xlsx')):
             raise forms.ValidationError('File type is not supported. Please upload a CSV or Excel file.')
 
-        # Validate file size (limit to 10 MB)
-        if file.size > 10 * 1024 * 1024:  # 10 MB limit
-            raise forms.ValidationError('File size exceeds 10 MB limit.')
+        # Optionally, you can add file size validation
+        if file.size > 10 * 1024 * 1024:  # Limit file size to 10MB
+            raise forms.ValidationError('File size exceeds the 10 MB limit.')
 
         return file
-
