@@ -54,6 +54,7 @@ ROOT_URLCONF = 'DevTest.urls'
 # settings.py
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+ALLOWED_HOSTS = ['devtest-2-uuof.onrender.com']
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
