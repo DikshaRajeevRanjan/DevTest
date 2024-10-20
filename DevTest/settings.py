@@ -60,8 +60,7 @@ ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.herokuapp.com','devtest-media2.onre
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'dikshapriya969@gmail.com'  # Your email address
-EMAIL_HOST_PASSWORD = 'huon tmum phec banc'  # Your email password (or app-specific password)
+  # Your email password (or app-specific password)
 
 import os
 import ssl
