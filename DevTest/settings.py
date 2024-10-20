@@ -55,6 +55,8 @@ ROOT_URLCONF = 'DevTest.urls'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 ALLOWED_HOSTS = ['devtest-media.onrender.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.herokuapp.com']
+
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
